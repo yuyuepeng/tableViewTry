@@ -542,7 +542,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-TTMV.Com.TableViewTry";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fuyaoxiansheng/Desktop/我的工程/swift/TableViewTry/TableViewTry/FirstTryHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/fuyaoxiansheng/tableViewTry/TableViewTry/FirstTryHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -561,7 +561,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.-TTMV.Com.TableViewTry";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/fuyaoxiansheng/Desktop/我的工程/swift/TableViewTry/TableViewTry/FirstTryHeader.h";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/fuyaoxiansheng/tableViewTry/TableViewTry/FirstTryHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

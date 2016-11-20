@@ -7,34 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TShopHeader.h"
-#import "TShopSellerInfoModel.h"
+#import <UIKit/UIKit.h>
 
-UIKIT_EXTERN NSString *const MRAlipayPartner;//合作id
-
-UIKIT_EXTERN NSString *const MRAlipaySeller;//商户账户
-UIKIT_EXTERN NSString *const MRAlipaySeller1;//商户账户
-UIKIT_EXTERN NSString *const MRAlipayKey;
 @interface TShopTools : NSObject
-/**
- *  MD5加密
- *
- *  @param target 被加密
- *
- *  @return 加密后
- */
-+ (NSString *)MD5Encryption:(id)target;
-/**
- *  base64加密
- *
- *  @param text <#text description#>
- *
- *  @return <#return value description#>
- */
-+ (NSString *)base64StringFromText:(NSString *)text;
-
-+ (NSString *)textFromBase64String:(NSString *)base64;
-
 /*!
  @brief 将字符串日期穿换成App标准日期
  */
@@ -46,8 +21,6 @@ UIKIT_EXTERN NSString *const MRAlipayKey;
 + (NSString *)converTimeToDate:(NSTimeInterval )time;
 
 //获得图片路径
-+ (NSString *)getBundlePath: (NSString *) assetName;
-+ (NSBundle *)getBundle;
 //根据Data得到type值
 + (NSString *)mineTypeWithData:(NSData *)data;
 
@@ -76,9 +49,7 @@ UIKIT_EXTERN NSString *const MRAlipayKey;
 + (BOOL)checkStringLimitWithContent:(NSString *)content length:(NSInteger)length;
 + (NSString *)changeToJasonWithArray:(id)array;
 //获取用户店铺详状态
-+ (void)getSellerCondition:(void (^)(NSArray<TShopSellerInfoModel *>* condition))conditionBlock WithUserId:(NSString *)userId ;
 //根据用户userId获取主播店铺的sellerId
-+ (void)getAnchorSellerId:(void (^)(NSString *anchorSellerId))anchorSellerIdBlock WithUserId:(NSString *)userId;
 //使图片满屏size
 + (CGSize)changeMainScreenSizeWithImage:(UIImage *)image;
 + (UIWindow *)getValidWindow;

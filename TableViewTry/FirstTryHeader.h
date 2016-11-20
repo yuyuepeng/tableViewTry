@@ -1,3 +1,4 @@
+
 //
 //  FirstTryHeader.h
 //  TableViewTry
@@ -9,5 +10,9 @@
 #ifndef FirstTryHeader_h
 #define FirstTryHeader_h
 
+#import <AFNetworking.h>
+#import "TShopTools.h"
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
 
 #endif /* FirstTryHeader_h */

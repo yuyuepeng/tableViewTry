@@ -9,5 +9,6 @@
 import UIKit
 
 class firstModelTry: NSObject {
-
+    var pic:String = String()
+    var title:String = String()
 }
